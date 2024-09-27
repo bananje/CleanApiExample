@@ -1,0 +1,24 @@
+# Базовый образ для выполнения приложения
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+# Базовый образ для сборки приложения
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+COPY ["FinBeatTestExercise/FinBeatTestExercise.csproj", "FinBeatTestExercise/"]
+RUN dotnet restore "FinBeatTestExercise/FinBeatTestExercise.csproj"
+COPY . .
+WORKDIR "/src/FinBeatTestExercise"
+RUN dotnet build "FinBeatTestExercise.csproj" -c Release -o /app/build
+
+# Этап публикации
+FROM build AS publish
+RUN dotnet publish "FinBeatTestExercise.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+# Финальный образ
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "FinBeatTestExercise.dll"]
