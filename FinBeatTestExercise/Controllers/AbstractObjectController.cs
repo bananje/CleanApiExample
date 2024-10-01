@@ -1,9 +1,9 @@
 using FinBeatTestExercise.Application.Contracts;
 using FinBeatTestExercise.Contracts;
-using FinBeatTestExercise.Infrastructure.Utils;
+using FinBeatTestExercise.Infrastructure.Migrations.Utils;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FinBeatTestExercise.Infrastructure.Controllers;
+namespace FinBeatTestExercise.Controllers;
 
 [ApiController]
 [Route("api/v1/[controller]")]

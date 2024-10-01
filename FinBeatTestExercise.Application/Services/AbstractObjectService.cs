@@ -1,8 +1,10 @@
 ﻿using FinBeatTestExercise.Application.Contracts;
+using FinBeatTestExercise.Application.Features.Errors;
 using FinBeatTestExercise.Application.Features.Results;
 using FinBeatTestExercise.Contracts;
-using FinBeatTestExercise.Domain.Errors;
-using FinBeatTestExercise.Domain.Models;
+using FinBeatTestExercise.Domain;
+using Microsoft.Extensions.Logging;
+
 
 namespace FinBeatTestExercise.Application.Services;
 
@@ -17,7 +19,7 @@ public class AbstractObjectService(
             await repository.RemoveAllObjectsAsync();
 
             // mapping
-            AbstractObject obj = new() { Code = value.Code, Value = value.Value};
+            AbstractObject obj = new() { Code = value.Code, Value = value.Value };
 
             await repository.AddAbstractObjectAsync(obj);
 

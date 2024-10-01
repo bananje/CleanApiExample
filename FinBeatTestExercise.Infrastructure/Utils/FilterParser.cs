@@ -1,4 +1,4 @@
-﻿namespace FinBeatTestExercise.Infrastructure.Utils;
+﻿namespace FinBeatTestExercise.Infrastructure.Migrations.Utils;
 
 public class FilterParser
 {

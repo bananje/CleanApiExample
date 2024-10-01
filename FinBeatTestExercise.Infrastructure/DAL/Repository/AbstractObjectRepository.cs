@@ -1,5 +1,5 @@
 ﻿using FinBeatTestExercise.Application.Contracts;
-using FinBeatTestExercise.Domain.Models;
+using FinBeatTestExercise.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
 using System.Reflection;
@@ -28,7 +28,7 @@ public class AbstractObjectRepository(
         var dataSet = dbContext.AbstractObjects.AsQueryable();
 
         foreach (var filter in filters)
-        {         
+        {
             var entityType = typeof(AbstractObject);
 
             var propertyInfo = entityType.GetProperty(filter.Key, BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);

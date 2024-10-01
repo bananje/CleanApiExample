@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FinBeatTestExercise.Domain.Models;
+namespace FinBeatTestExercise.Domain;
 
 public class AbstractObject
 {

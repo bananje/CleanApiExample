@@ -1,4 +1,4 @@
-﻿using FinBeatTestExercise.Domain.Models;
+﻿using FinBeatTestExercise.Domain;
 
 namespace FinBeatTestExercise.Application.Contracts;
 

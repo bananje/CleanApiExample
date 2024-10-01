@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace FinBeatTestExercise.Infrastructure.Utils;
+namespace FinBeatTestExercise.Infrastructure.Migrations.Utils;
 
 public class FinBeatDbContextFactory : IDesignTimeDbContextFactory<FinBeatDbContext>
 {

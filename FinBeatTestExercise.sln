@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34814.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinBeatTestExercise", "FinBeatTestExercise\FinBeatTestExercise.csproj", "{F4362EF0-C36C-40F5-BC35-D3F107A0B7F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinBeatTestExercise", "FinBeatTestExercise\FinBeatTestExercise.csproj", "{F4362EF0-C36C-40F5-BC35-D3F107A0B7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinBeatTestExercise.Application", "FinBeatTestExercise.Application\FinBeatTestExercise.Application.csproj", "{6DF3E654-75D0-449C-BBBC-66ADE934D3B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinBeatTestExercise.Infrastructure", "FinBeatTestExercise.Infrastructure\FinBeatTestExercise.Infrastructure.csproj", "{DE4FF6E5-EFEA-4FA5-AC71-C1C94BA116F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinBeatTestExercise.Domain", "FinBeatTestExercise.Domain\FinBeatTestExercise.Domain.csproj", "{8AA589E8-45A8-47B5-AE0E-B73E3AE591FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinBeatTestExercise.Contracts", "FinBeatTestExercise.Contracts\FinBeatTestExercise.Contracts.csproj", "{D97DE38C-66E7-4EAC-8F6A-7C9E3C058B4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{F4362EF0-C36C-40F5-BC35-D3F107A0B7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4362EF0-C36C-40F5-BC35-D3F107A0B7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4362EF0-C36C-40F5-BC35-D3F107A0B7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF3E654-75D0-449C-BBBC-66ADE934D3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF3E654-75D0-449C-BBBC-66ADE934D3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF3E654-75D0-449C-BBBC-66ADE934D3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF3E654-75D0-449C-BBBC-66ADE934D3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4FF6E5-EFEA-4FA5-AC71-C1C94BA116F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4FF6E5-EFEA-4FA5-AC71-C1C94BA116F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4FF6E5-EFEA-4FA5-AC71-C1C94BA116F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4FF6E5-EFEA-4FA5-AC71-C1C94BA116F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA589E8-45A8-47B5-AE0E-B73E3AE591FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA589E8-45A8-47B5-AE0E-B73E3AE591FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA589E8-45A8-47B5-AE0E-B73E3AE591FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA589E8-45A8-47B5-AE0E-B73E3AE591FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97DE38C-66E7-4EAC-8F6A-7C9E3C058B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97DE38C-66E7-4EAC-8F6A-7C9E3C058B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97DE38C-66E7-4EAC-8F6A-7C9E3C058B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97DE38C-66E7-4EAC-8F6A-7C9E3C058B4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

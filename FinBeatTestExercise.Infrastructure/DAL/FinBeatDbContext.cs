@@ -1,4 +1,4 @@
-﻿using FinBeatTestExercise.Domain.Models;
+﻿using FinBeatTestExercise.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinBeatTestExercise.Infrastructure.DAL;

@@ -22,4 +22,11 @@
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinBeatTestExercise.Application\FinBeatTestExercise.Application.csproj" />
+    <ProjectReference Include="..\FinBeatTestExercise.Contracts\FinBeatTestExercise.Contracts.csproj" />
+    <ProjectReference Include="..\FinBeatTestExercise.Domain\FinBeatTestExercise.Domain.csproj" />
+    <ProjectReference Include="..\FinBeatTestExercise.Infrastructure\FinBeatTestExercise.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

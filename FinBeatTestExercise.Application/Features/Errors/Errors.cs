@@ -1,7 +1,7 @@
 ﻿using FinBeatTestExercise.Application.Features.Results;
 using System.Net;
 
-namespace FinBeatTestExercise.Domain.Errors;
+namespace FinBeatTestExercise.Application.Features.Errors;
 
 public static class Errors
 {
